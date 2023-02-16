@@ -1,0 +1,49 @@
+\section{Progettazione logica}
+\subsection{Ristrutturazione dello schema ER}
+
+\subsubsection{Schema ER ristrutturato}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.45]{Images/ER - Ristrutturato.png}
+\end{figure}
+
+\newpage
+\subsection{Traduzione verso il modello logico}
+
+\subsubsection{Schema logico}
+\begin{itemize}
+    \item[$\circ$] \texttt{Mondiale (\underline{Edizione}, Descrizione)}
+    \item[$\circ$] \texttt{Regolamento (\underline{Codice}, Spiegazione, Descrizione, Mondiale)}
+    \item[$\circ$] \texttt{Scuderia (\underline{Nome}, Anno$\_$fondazione)}
+    \item[$\circ$] \texttt{Partecipazione (\underline{Mondiale}, \underline{Scuderia})}
+    \item[$\circ$] \texttt{Team (\underline{Scuderia}, \underline{Settore}, Numero$\_$dipendenti)}
+    \item[$\circ$] \texttt{Vettura (\underline{Mondiale}, \underline{Numero}, Nome, Cavalli, Commento*)}
+    \item[$\circ$] \texttt{Sviluppare (\underline{Vettura}, \underline{Team})}
+    \item[$\circ$] \texttt{Dipendente (\underline{Matricola}, Nome, Cognome, Data$\_$nascita)}
+    \item[$\circ$] \texttt{Lavoro (\underline{Team}, \underline{Dipendente}, Data$\_$inizio, Data$\_$fine)}
+    \item[$\circ$] \texttt{Team principal (\underline{Dipendente}, Salario)}
+    \item[$\circ$] \texttt{Pilota (\underline{Dipendente}, BMI$\_$peso, BMI$\_$altezza)}
+    \item[$\circ$] \texttt{Circuito (\underline{Nome}, Nazione)}
+    \item[$\circ$] \texttt{Gara (\underline{Circuito}, \underline{Pilota},\underline{Data$\_$gara}, Posizione, Punteggio)}
+\end{itemize}
+
+\vspace*{10 pt}
+\noindent Con \textbf{vincoli d'integrità referenziali}:
+
+\begin{itemize}
+    \item \emph{Mondiale} in \textbf{Regolamento} con la chiave primaria di \textbf{Mondiale};
+    \item \emph{Mondiale} in \textbf{Partecipazione} con la chiave primaria di \textbf{Mondiale};
+    \item \emph{Scuderia} in \textbf{Partecipazione} con la chiave primaria di \textbf{Scuderia};
+    \item \emph{Scuderia} in \textbf{Team} con la chiave primaria di \textbf{Scuderia};
+    \item \emph{Scuderia} in \textbf{Team} con la chiave primaria di \textbf{Scuderia};
+    \item \emph{Mondiale} in \textbf{Vettura} con la chiave primaria di \textbf{Mondiale};
+    \item \emph{Vettura} in \textbf{Sviluppare} con la chiave primaria di \textbf{Vettura};
+    \item \emph{Team} in \textbf{Sviluppare} con la chiave primaria di \textbf{Team};
+    \item \emph{Team} in \textbf{Lavoro} con la chiave primaria di \textbf{Team};
+    \item \emph{Dipendente} in \textbf{Lavoro} con la chiave primaria di \textbf{Dipendente};
+    \item \emph{Dipendente} in \textbf{Team principal} con la chiave primaria di \textbf{Dipendente};
+    \item \emph{Dipendente} in \textbf{Pilota} con la chiave primaria di \textbf{Dipendente};
+    \item \emph{Circuito} in \textbf{Gara} con la chiave primaria di \textbf{Circuito};
+    \item \emph{Pilota} in \textbf{Gara} con la chiave primaria di \textbf{Pilota}.
+\end{itemize}

@@ -1,0 +1,20 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {section}{\numberline {1}Introduzione}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Analisi iniziale}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Traccia}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Progettazione concettuale}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Schema ER}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Business rules}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Descrizione dei concetti}{4}{subsubsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.3}Vincoli d'integrità}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Derivazioni}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Carico applicativo}{6}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Tavola dei volumi}{6}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Tavola delle operazioni}{6}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Tavole degli accessi}{6}{subsubsection.2.5.3}%
+\contentsline {section}{\numberline {3}Progettazione logica}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Ristrutturazione dello schema ER}{8}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Schema ER ristrutturato}{8}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}Traduzione verso il modello logico}{9}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Schema logico}{9}{subsubsection.3.2.1}%
